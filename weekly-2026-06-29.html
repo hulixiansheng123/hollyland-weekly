@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>昊一源竞品周报 | 2026-06-29</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        moma: {
+          dark: '#1a1a2e',
+          red: '#e94560',
+          blue: '#0f3460',
+          cyan: '#16213e',
+        }
+      }
+    }
+  }
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  body { background: #f8fafc; color: #1e293b; }
+  .header-gradient { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+  .card-signal { border-left: 4px solid; transition: all 0.2s ease; }
+  .card-signal:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
+  .tag-opportunity { background: #ecfdf5; color: #059669; }
+  .tag-threat { background: #fef2f2; color: #dc2626; }
+  .tag-neutral { background: #f8fafc; color: #64748b; }
+  .confidence-high { background: #10b981; }
+  .confidence-mid { background: #f59e0b; }
+  .confidence-low { background: #ef4444; }
+  .moma-meter { transition: all 0.3s ease; }
+  details summary { cursor: pointer; user-select: none; }
+  details summary:hover { color: #e94560; }
+  details[open] summary { color: #e94560; font-weight: 600; }
+  .blink-dot { animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  @media print { body { background: white; } .no-print { display: none; } }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- ====== Header ====== -->
+<header class="header-gradient text-white py-10 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="flex items-center justify-between flex-wrap gap-4">
+      <div>
+        <p class="text-sm font-medium tracking-widest text-gray-300 mb-1">HOLLYLAND 猛玛 · 战略运营</p>
+        <h1 class="text-3xl md:text-4xl font-bold">🎯 昊一源竞品周报</h1>
+        <p class="text-lg text-gray-300 mt-2">2026-06-29 · 覆盖 6/23–6/29</p>
+      </div>
+      <div class="text-right text-sm text-gray-400">
+        <p>AI 驱动 · 每周一自动生成</p>
+        <p class="mt-1">基于五看三定 · 竞争制胜方法论</p>
+      </div>
+    </div>
+    <!-- Anchor nav -->
+    <nav class="mt-6 flex flex-wrap gap-3 text-sm">
+      <a href="#signals" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition">📰 本周信号</a>
+      <a href="#competitors" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition">🔍 竞品动态</a>
+      <a href="#moma-status" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition">🛡️ 猛玛地位</a>
+      <a href="#actions" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition">⚡ 行动建议</a>
+      <a href="#quickref" class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition">📋 参数速查</a>
+    </nav>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 md:px-6 py-8 space-y-10">
+
+<!-- ====== Section 1: 本周关键信号 ====== -->
+<section id="signals">
+  <div class="flex items-center gap-3 mb-5">
+    <span class="text-2xl">📰</span>
+    <h2 class="text-2xl font-bold text-gray-900">本周关键信号</h2>
+    <span class="blink-dot w-2.5 h-2.5 rounded-full bg-red-500 ml-2"></span>
+  </div>
+  <div class="grid md:grid-cols-3 gap-4">
+
+    <!-- Signal 1 -->
+    <div class="card-signal border-red-500 bg-white rounded-xl shadow-sm p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold tag-threat px-2 py-0.5 rounded-full">⚠️ 威胁</span>
+        <span class="flex items-center gap-1 text-xs text-gray-400">
+          <span class="w-2 h-2 rounded-full confidence-high"></span> 高置信
+        </span>
+      </div>
+      <h3 class="font-semibold text-gray-900 mb-2">DJI Mic Mini 2S 定档 7/2 发布：Mini 系列首次加入 32-bit 浮点内录</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        DJI Mini 系列最大短板被补齐。Mic Mini 2S 新增 14.5GB 内置存储 + 24/32-bit 浮点内录 + 四通道 + 10 色磁吸前盖，重量仅 12g。定价未公布，但大概率在 599-799 元区间。
+      </p>
+      <div class="mt-3 text-xs text-moma-red font-medium">
+        对猛玛：若定价 ≤799 元，将直接冲击猛玛 LARK M2（499-999 元）中端线。DJI 以 Mini 2S + Mic 3 双线覆盖，正面撞上猛玛 A1/M2/MAX2 三档策略。
+      </div>
+    </div>
+
+    <!-- Signal 2 -->
+    <div class="card-signal border-amber-500 bg-white rounded-xl shadow-sm p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold tag-neutral px-2 py-0.5 rounded-full">📡 信号</span>
+        <span class="flex items-center gap-1 text-xs text-gray-400">
+          <span class="w-2 h-2 rounded-full confidence-high"></span> 高置信
+        </span>
+      </div>
+      <h3 class="font-semibold text-gray-900 mb-2">RODE 发布 RODELink II UHF 系统 + Sonaura MEMS 自研平台</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        RODE 在 NAB 2026 发布两大技术底座：① 时隔十年更新的 UHF 无线系统（避免 2.4GHz 拥堵，搭载 32-bit 浮点 + 时间码）；② 与英飞凌联合研发的 4mm MEMS 平台（83dB SNR）。
+      </p>
+      <div class="mt-3 text-xs text-moma-red font-medium">
+        对猛玛：短期不冲击消费级战场，但 RODE 在「专业广播→高端内容创作」的技术下沉路径清晰。UHF+MEMS 自研是长期护城河，猛玛需关注自研芯片路线。
+      </div>
+    </div>
+
+    <!-- Signal 3 -->
+    <div class="card-signal border-green-500 bg-white rounded-xl shadow-sm p-5">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs font-semibold tag-opportunity px-2 py-0.5 rounded-full">✅ 利好</span>
+        <span class="flex items-center gap-1 text-xs text-gray-400">
+          <span class="w-2 h-2 rounded-full confidence-high"></span> 高置信
+        </span>
+      </div>
+      <h3 class="font-semibold text-gray-900 mb-2">影石 Mic Pro 限时优惠到期恢复原价，价格上浮 32%</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        6 月 21 日限时优惠截止：单发 ¥528→¥698，一发一收 ¥978→¥1198，两发一收 ¥1698→¥1998。同时 Q1 财报显示净利率仅 3.4%，法务消耗叠加财务压力。
+      </p>
+      <div class="mt-3 text-xs text-moma-red font-medium">
+        对猛玛：Mic Pro 从「低价突袭」回归正常定价，猛玛 LARK MAX 2（¥1099）价格优势恢复。影石财务承压 + 专利诉讼消耗，可能限制其无线麦品类的持续投入力度。
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Secondary signals -->
+  <div class="grid md:grid-cols-2 gap-3 mt-3">
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-xs font-semibold tag-opportunity px-2 py-0.5 rounded-full">✅ 利好</span>
+        <span class="text-xs text-gray-400">🟢 高置信</span>
+      </div>
+      <p class="text-sm font-medium text-gray-800">信号 #4：六大品牌横评密集发布，猛玛「行业首创」认知固化</p>
+      <p class="text-xs text-gray-500 mt-1">6 月多份横评反复提及猛玛 LARK MAX 2 四项行业首创（无线监听/AI 20 档降噪/32-bit 全链路/四发一收），IT168 文章特别强调「行业首创 = 产品定义壁垒，参数难以短期追赶」。评测圈「技术创新者」品牌认知正在形成。</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-xs font-semibold tag-neutral px-2 py-0.5 rounded-full">📡 关注</span>
+        <span class="text-xs text-gray-400">🟡 中置信</span>
+      </div>
+      <p class="text-sm font-medium text-gray-800">信号 #5：骅讯无线音频方案量产，K 歌产品增长迅猛</p>
+      <p class="text-xs text-gray-500 mt-1">骅讯股东会披露已协助多家国际电竞品牌实现无线方案量产，无线音频已导入耳机/麦克风/Dongle/音箱。2025 年前 5 月累计营收同比增 50.9%。上游方案成熟化降低新品牌入局门槛——需关注白牌/跨界品牌用成熟方案快速进入。</p>
+    </div>
+  </div>
+
+  <p class="text-xs text-gray-400 mt-3">信号筛选自近 7 天公开信息。置信度：🟢高 🟡中 🔴低</p>
+</section>
+
+<!-- ====== Section 2: 竞品动态 ====== -->
+<section id="competitors">
+  <div class="flex items-center gap-3 mb-5">
+    <span class="text-2xl">🔍</span>
+    <h2 class="text-2xl font-bold text-gray-900">竞品动态 · 逐品牌</h2>
+  </div>
+  <p class="text-sm text-gray-500 -mt-3 mb-4">点击品牌展开详情。每条动态标注「对昊一源的影响」</p>
+  <div class="space-y-3">
+
+    <!-- DJI -->
+    <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <summary class="text-lg font-semibold text-gray-700">🛸 DJI 大疆 — 本周 2 项动态</summary>
+      <div class="mt-4 space-y-4">
+        <div class="border-l-4 border-red-400 pl-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold tag-threat px-2 py-0.5 rounded-full">⚠️ 威胁</span>
+            <span class="text-xs text-gray-400">7月2日发布</span>
+          </div>
+          <p class="font-semibold text-gray-800 mt-1">DJI Mic Mini 2S：Mini 系列首次支持 32-bit 浮点内录 + 4 通道</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>• 14.5GB 内置存储，24/32-bit 浮点内录（Mini 系列此前最大短板被补齐）</li>
+            <li>• 单声道/双声道/四声道四种录制模式，10 色可换磁吸前盖</li>
+            <li>• 发射器 12g，AI 两级降噪，400 米传输，预计定价 599-799 元</li>
+            <li>• 版本：通用一拖二/一拖一、手机一拖一、单独发射器</li>
+          </ul>
+          <p class="text-xs text-moma-red mt-2 font-medium">→ 对猛玛：若定价 699-799 元，直接侵入猛玛 LARK M2（499-999 元）核心价格带。DJI 完成「Mini 2S 中端 + Mic 3 旗舰」双线布局，正面迎战猛玛 A1/M2/MAX2。DJI 的品牌势能 + 影像生态锁定是中端线最大威胁。</p>
+        </div>
+        <div class="border-l-4 border-amber-300 pl-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold tag-neutral px-2 py-0.5 rounded-full">📡 持续</span>
+          </div>
+          <p class="font-semibold text-gray-800 mt-1">大疆 vs 影石专利战无新裁决，影石股价年内跌逾三成</p>
+          <p class="text-xs text-gray-500 mt-1">→ 对猛玛：两家巨头互诉消耗，猛玛持续获得战略喘息窗口。影石财务承压最有利于猛玛在消费级无线麦赛道扩大优势。</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- RODE -->
+    <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <summary class="text-lg font-semibold text-gray-700">🎙️ RODE 罗德 — 本周 2 项动态</summary>
+      <div class="mt-4 space-y-4">
+        <div class="border-l-4 border-amber-400 pl-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold tag-neutral px-2 py-0.5 rounded-full">📡 信号</span>
+            <span class="text-xs text-gray-400">NAB 2026</span>
+          </div>
+          <p class="font-semibold text-gray-800 mt-1">RODELink II：时隔十年更新的 UHF 无线系统</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>• 从 2.4GHz 转向专属 UHF 频段，避免 2.4GHz 拥堵（借鉴同集团 Lectrosonics 技术）</li>
+            <li>• 搭载 32-bit 浮点录音 + 时间码，锁定接口专用线材</li>
+            <li>• 定位：广播影视专业级，尚未公布售价和上市时间</li>
+          </ul>
+          <p class="text-xs text-moma-red mt-2 font-medium">→ 对猛玛：短期不影响消费级竞争。但 UHF+时间码=专业级护城河，RODE 正从消费级向专业广播渗透——提醒猛玛：高端化不止参数，技术底层（频段/芯片/协议）才是长期壁垒。</p>
+        </div>
+        <div class="border-l-4 border-amber-400 pl-4">
+          <p class="font-semibold text-gray-800">Sonaura MEMS 自研平台：与英飞凌联合研发 4mm 微型拾音头</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>• 尺寸仅 4mm×5mm，信噪比 83dB，本底噪声 11dBA</li>
+            <li>• 密封双振膜 + 定制低噪声 ASIC 芯片，自研而非采购</li>
+          </ul>
+          <p class="text-xs text-moma-red mt-2 font-medium">→ 对猛玛：RODE 在核心声学器件上走向自研，这是比产品参数更深层的竞争。猛玛目前在 MEMS/芯片层面依赖外部供应商——这是需要关注的战略级差距。</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Insta360 -->
+    <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <summary class="text-lg font-semibold text-gray-700">🎥 影石 Insta360 — 本周 2 项动态</summary>
+      <div class="mt-4 space-y-4">
+        <div class="border-l-4 border-green-400 pl-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold tag-opportunity px-2 py-0.5 rounded-full">✅ 猛玛利好</span>
+          </div>
+          <p class="font-semibold text-gray-800 mt-1">Mic Pro 限时优惠到期恢复原价，价格上浮 32%</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>• 单发 ¥528→¥698（+32%），一发一收 ¥978→¥1198，两发一收 ¥1698→¥1998</li>
+            <li>• 恢复原价后，两发一收版（¥1998）已高于猛玛 LARK MAX 2 两发一收的实际成交价</li>
+            <li>• Mic Pro 的 NPU 降噪 + 墨水屏差异化仍在，但价格优势不再</li>
+          </ul>
+          <p class="text-xs text-moma-red mt-2 font-medium">→ 对猛玛：窗口期利好。猛玛应趁此窗口强化「1099 元 = 行业首创四大功能」的性价比叙事。影石从价格搅局者回归正常竞争者身份。</p>
+        </div>
+        <div class="border-l-4 border-red-300 pl-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold tag-threat px-2 py-0.5 rounded-full">⚠️ 关注</span>
+          </div>
+          <p class="font-semibold text-gray-800 mt-1">Q1 财务承压：净利率仅 3.4%，研发 + 销售费用双增 + 法务消耗</p>
+          <p class="text-xs text-gray-500 mt-1">→ 对猛玛：影石财务压力可能限制 Mic Pro 后续迭代速度，但也可能倒逼影石更激进地抢夺市场份额以摊薄费用。需密切关注影石下一季度财报中对音频品类的资源分配表述。</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- 闪克 + 森海塞尔 -->
+    <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <summary class="text-lg font-semibold text-gray-700">📻 闪克 Maono + 森海塞尔 — 本周 2 项动态</summary>
+      <div class="mt-4 space-y-4">
+        <div class="border-l-4 border-amber-300 pl-4">
+          <p class="font-semibold text-gray-800">闪克 PD200W 获两会背书 + 六大品牌横评综合第一</p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>• 2026 全国两会访谈间指定收音设备，品牌权威性持续强化</li>
+            <li>• 6 月多份横评中，闪克在「综合体验」维度多次排名第一</li>
+            <li>• WAVET5 以 14 级 AI 降噪 + 300 米传输构建中端竞争力</li>
+          </ul>
+          <p class="text-xs text-moma-red mt-2 font-medium">→ 对猛玛：闪克以「桌面麦 + 领夹麦」双线构建全场景，和猛玛「无线监听 + 全链路」的技术路线差异化明显。两会背书带来的品牌权威性是猛玛目前不具备的。</p>
+        </div>
+        <div class="border-l-4 border-gray-300 pl-4">
+          <p class="font-semibold text-gray-800">森海塞尔 Profile Wireless：专业定价格局稳定，消费级无新动作</p>
+          <p class="text-xs text-gray-500 mt-1">→ 对猛玛：森海塞尔维持 ¥3000+ 专业定位，与猛玛不直接竞争。但需注意：若森海塞尔未来推出 1500-2000 元消费级产品，品牌势能将构成降维打击。</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- 行业趋势 -->
+    <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+      <summary class="text-lg font-semibold text-gray-700">🌐 行业趋势 — 本周 2 项值得关注</summary>
+      <div class="mt-4 space-y-4">
+        <div class="border-l-4 border-amber-400 pl-4">
+          <p class="font-semibold text-gray-800">全球无线麦市场：2025-2032 CAGR 4.6%，中国 CAGR 8.4% 领跑</p>
+          <p class="text-xs text-gray-500 mt-1">Research and Markets 6 月报告：2025 年全球 24 亿美元 → 2032 年 32 亿美元。中国 2032 年预计 7.9 亿美元，增速远超全球均值。驱动因素：短视频/直播/远程办公/电竞。→ 猛玛所处的中国市场是高增长主场，但也是所有品牌的必争之地。</p>
+        </div>
+        <div class="border-l-4 border-amber-400 pl-4">
+          <p class="font-semibold text-gray-800">InfoComm 2026 专业线动态：AUDIX Novacore + DPA N-Series</p>
+          <p class="text-xs text-gray-500 mt-1">专业音频厂商加速数字化：AUDIX 完整 16 产品线亮相（$699/通道），DPA 解锁 Guard Band 频谱。→ 专业线和消费线的技术边界在模糊——24-bit 数字音频、DSP 降噪、频谱管理正向消费级渗透。</p>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- ====== Section 3: 猛玛竞争地位仪表盘 ====== -->
+<section id="moma-status">
+  <div class="flex items-center gap-3 mb-5">
+    <span class="text-2xl">🛡️</span>
+    <h2 class="text-2xl font-bold text-gray-900">猛玛竞争地位仪表盘</h2>
+  </div>
+
+  <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+    <!-- 竞争窗口评估 -->
+    <div class="mb-6">
+      <h3 class="font-semibold text-gray-800 mb-3">竞争窗口：6-9 个月（温和收紧）<span class="text-xs text-gray-400 ml-2">上周：6-9 个月</span></h3>
+      <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-500 to-amber-500 h-full rounded-full moma-meter" style="width: 65%"></div>
+      </div>
+      <div class="flex justify-between text-xs text-gray-400 mt-1">
+        <span>窗口收窄</span><span>机遇期</span><span>优势巩固</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <!-- 机会 -->
+      <div>
+        <h4 class="text-sm font-semibold text-green-700 mb-2">✅ 机会</h4>
+        <ul class="text-sm text-gray-600 space-y-1.5">
+          <li>• 影石 Mic Pro 恢复原价，猛玛价格优势回归</li>
+          <li>• DJI vs 影石专利消耗战持续，两家注意力分散</li>
+          <li>• 六大品牌横评强化猛玛「技术创新者」认知</li>
+          <li>• 中国市场增速（CAGR 8.4%）远超全球，主场红利</li>
+        </ul>
+      </div>
+
+      <!-- 风险 -->
+      <div>
+        <h4 class="text-sm font-semibold text-red-700 mb-2">⚠️ 风险</h4>
+        <ul class="text-sm text-gray-600 space-y-1.5">
+          <li>• DJI Mic Mini 2S 补上内录短板，中端线渗透力增强</li>
+          <li>• RODE 自研 MEMS+UHF，底层技术壁垒拉大</li>
+          <li>• 上游方案成熟化降低新品牌入局门槛</li>
+          <li>• DJI/影石「相机+麦」生态捆绑持续强化</li>
+        </ul>
+      </div>
+
+      <!-- 行动窗口 -->
+      <div>
+        <h4 class="text-sm font-semibold text-blue-700 mb-2">🎯 趁窗口做什么</h4>
+        <ul class="text-sm text-gray-600 space-y-1.5">
+          <li>• 7/2 DJI 发布会后 24h 内出回应策略</li>
+          <li>• 乘横评热度，强化「行业首创」技术品牌叙事</li>
+          <li>• 调研自研 MEMS/芯片可行性，缩小底层差距</li>
+          <li>• 扫描白牌/跨界品牌入局信号，建立预警机制</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Section 4: 本周建议关注 ====== -->
+<section id="actions">
+  <div class="flex items-center gap-3 mb-5">
+    <span class="text-2xl">⚡</span>
+    <h2 class="text-2xl font-bold text-gray-900">本周行动建议</h2>
+    <span class="text-xs text-gray-400">优先级排序</span>
+  </div>
+  <div class="space-y-3">
+
+    <div class="bg-white rounded-xl shadow-sm border-l-4 border-red-500 p-4 flex gap-3">
+      <span class="text-lg">🔴</span>
+      <div>
+        <p class="font-semibold text-gray-800">P0：紧盯 DJI Mic Mini 2S 发布会（7/2 20:00）</p>
+        <p class="text-sm text-gray-600 mt-1">提前准备三套回应策略：① 定价 ≥799 元 → 强调猛玛 M2 在同等价位有更多功能；② 定价 599-699 元 → 强调 MAX2 独占功能（无线监听/20 档降噪）建立区隔；③ 定价 <599 元 → 评估是否需要 A1 降价或 M2 增配。</p>
+        <p class="text-xs text-gray-400 mt-1">责任人建议：产品线负责人 + 市场部</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-sm border-l-4 border-amber-500 p-4 flex gap-3">
+      <span class="text-lg">🟡</span>
+      <div>
+        <p class="font-semibold text-gray-800">P1：强化「行业首创」技术品牌叙事，乘横评热度窗口</p>
+        <p class="text-sm text-gray-600 mt-1">6 月六大品牌横评密集提及猛玛四项行业首创。建议（1）在猛玛官方渠道/社交媒体主动引用横评结果；（2）制作「无线麦克风行业首创时间线」信息图，强化「猛玛 = 品类创新者」心智；（3）联系 1-2 家横评媒体做深度专访。</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-sm border-l-4 border-amber-500 p-4 flex gap-3">
+      <span class="text-lg">🟡</span>
+      <div>
+        <p class="font-semibold text-gray-800">P1：评估自研芯片/MEMS 的战略必要性</p>
+        <p class="text-sm text-gray-600 mt-1">RODE 自研 MEMS + 英飞凌合作、影石 Mic Pro 内置 NPU——底层器件自研正成为差异化护城河。建议战略运营部联合研发管理中心做一份「自研 vs 采购」路线图评估（2 页以内），回答：猛玛下一代的差异化是靠参数还是靠芯片？</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-sm border-l-4 border-blue-400 p-4 flex gap-3">
+      <span class="text-lg">🔵</span>
+      <div>
+        <p class="font-semibold text-gray-800">P2：扫描白牌/跨界品牌入局信号</p>
+        <p class="text-sm text-gray-600 mt-1">骅讯等上游方案商无线音频方案量产成熟，K 歌/电竞跨界品牌可能用成熟方案快速进入无线麦市场。建议每月扫描一次电商平台新品牌/新 SKU 上架情况。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== Section 5: 竞品参数速查表 ====== -->
+<section id="quickref">
+  <details class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+    <summary class="text-lg font-semibold text-gray-700">📋 竞品参数速查表（折叠）— 更新至 2026-06-29</summary>
+    <div class="mt-4 overflow-x-auto">
+      <table class="w-full text-sm border-collapse">
+        <thead>
+          <tr class="bg-gray-50 text-left text-gray-600">
+            <th class="p-3 border-b font-medium">品牌/产品</th>
+            <th class="p-3 border-b font-medium">价格</th>
+            <th class="p-3 border-b font-medium">重量(TX)</th>
+            <th class="p-3 border-b font-medium">续航(TX)</th>
+            <th class="p-3 border-b font-medium">传输距离</th>
+            <th class="p-3 border-b font-medium">32-bit Float</th>
+            <th class="p-3 border-b font-medium">降噪</th>
+            <th class="p-3 border-b font-medium">核心卖点</th>
+            <th class="p-3 border-b font-medium">猛玛 vs</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-700">
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-semibold text-moma-red">猛玛 LARK MAX 2</td>
+            <td class="p-3 border-b">1099元起</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">11h</td>
+            <td class="p-3 border-b">100m(监听)</td>
+            <td class="p-3 border-b text-green-600">✅ 全链路</td>
+            <td class="p-3 border-b text-green-600">AI 20档</td>
+            <td class="p-3 border-b">无线监听+四发一收</td>
+            <td class="p-3 border-b">—</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">DJI Mic 3</td>
+            <td class="p-3 border-b">~2400元</td>
+            <td class="p-3 border-b">16g</td>
+            <td class="p-3 border-b">6h</td>
+            <td class="p-3 border-b">250m</td>
+            <td class="p-3 border-b text-yellow-600">⚠️ 内录</td>
+            <td class="p-3 border-b">ANC 2档</td>
+            <td class="p-3 border-b">Osmo生态</td>
+            <td class="p-3 border-b text-red-500">功能落后但生态强</td>
+          </tr>
+          <tr class="hover:bg-gray-50 bg-red-50">
+            <td class="p-3 border-b font-medium">🆕 DJI Mic Mini 2S</td>
+            <td class="p-3 border-b">待公布(7/2)</td>
+            <td class="p-3 border-b">12g</td>
+            <td class="p-3 border-b">待公布</td>
+            <td class="p-3 border-b">400m</td>
+            <td class="p-3 border-b text-green-600">✅ 内录</td>
+            <td class="p-3 border-b">AI 2档</td>
+            <td class="p-3 border-b">10色外壳+4通道</td>
+            <td class="p-3 border-b text-red-500">🆕 补上最大短板</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">DJI Mic Mini 2</td>
+            <td class="p-3 border-b">600-700元</td>
+            <td class="p-3 border-b">11g</td>
+            <td class="p-3 border-b">11-14h</td>
+            <td class="p-3 border-b">300-400m</td>
+            <td class="p-3 border-b text-red-500">❌</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">极致便携+48h充电盒</td>
+            <td class="p-3 border-b text-yellow-500">覆盖入门价格带</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">🆕 RODE RODELink II</td>
+            <td class="p-3 border-b">待公布</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">UHF</td>
+            <td class="p-3 border-b text-green-600">✅</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">UHF+时间码+自研MEMS</td>
+            <td class="p-3 border-b text-blue-500">不同赛道</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">RODE Wireless Pro</td>
+            <td class="p-3 border-b">~2800元</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">7h</td>
+            <td class="p-3 border-b">260m</td>
+            <td class="p-3 border-b text-yellow-600">⚠️ 内录</td>
+            <td class="p-3 border-b">保守</td>
+            <td class="p-3 border-b">品牌口碑+稳定可靠</td>
+            <td class="p-3 border-b text-green-500">功能/续航/价格领先</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">影石 Mic Pro</td>
+            <td class="p-3 border-b">¥698-1998（恢复原价）</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">10h</td>
+            <td class="p-3 border-b">400m</td>
+            <td class="p-3 border-b text-green-600">✅</td>
+            <td class="p-3 border-b text-green-600">NPU AI</td>
+            <td class="p-3 border-b">三麦阵列+彩色墨水屏</td>
+            <td class="p-3 border-b text-amber-500">价格优势恢复</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">闪克 WAVET5</td>
+            <td class="p-3 border-b">中端</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">9h</td>
+            <td class="p-3 border-b">300m</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">AI 14级</td>
+            <td class="p-3 border-b">两会背书</td>
+            <td class="p-3 border-b text-yellow-500">同方向竞争</td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="p-3 border-b font-medium">森海塞尔 Profile</td>
+            <td class="p-3 border-b">~3000元</td>
+            <td class="p-3 border-b">30g(RX)</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">245m</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">—</td>
+            <td class="p-3 border-b">专业品牌溢价</td>
+            <td class="p-3 border-b text-green-500">价位最高功能过剩</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+</main>
+
+<!-- ====== Footer ====== -->
+<footer class="border-t border-gray-200 mt-12 py-8 px-6">
+  <div class="max-w-4xl mx-auto text-sm text-gray-400 space-y-2">
+    <p>🤖 本报告由 AI 自动生成 · 2026-06-29 10:30 CST</p>
+    <p>📋 方法论：五看三定 + 竞争制胜四层体系 · 分析框架来自昊一源知识库</p>
+    <p>📊 数据来源：EDNChina拆解报告、NotebookCheck、Research and Markets全球报告、IT168品牌横评、InfoComm 2026展报、骅讯股东会、各大品牌官方信息</p>
+    <p class="text-xs text-gray-300 mt-3">免责声明：本报告为 AI 生成的内部参考材料，基于公开信息自动化分析，不构成投资或商业决策建议。关键判断请交叉验证后使用。</p>
+    <p class="text-xs text-gray-300">© 2026 深圳市昊一源科技有限公司 · 战略运营部</p>
+  </div>
+</footer>
+
+</body>
+</html>
